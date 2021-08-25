@@ -48,7 +48,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     # Checks if user is same as requested user or is admin
     if not ((user_id == ruser_id) or (user_id in chat_admins)):
-        await update.answer("Nice Try ;)",show_alert=True)
+        await update.answer("നിങ്ങൾ request ചെയ്താൽ മാത്രമേ ഇത് work ആകൊള്ളൂ ;)",show_alert=True)
         return
 
 
@@ -92,7 +92,7 @@ async def cb_navg(bot, update: CallbackQuery):
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"🔰 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"📃 Page {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 📃", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
@@ -139,7 +139,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<i>Found</i> <code>{leng}</code> <i>Results For Your Query:</i> <code>{query}</code>"
+    text=f"<i>Found Results</i> <code>{leng}</code> \n <i>Your Request🍿:</i> <code>{query}</code>"
         
     try:
         await update.message.edit(
