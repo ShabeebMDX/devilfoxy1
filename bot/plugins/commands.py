@@ -48,7 +48,6 @@ async def start(bot, update):
 
     buttons = [[
         InlineKeyboardButton('Modded 🛠️', url='https://t.me/solo_minded'),
-    ],[
         InlineKeyboardButton('Help 🌸', callback_data="help")
     ]]
     
