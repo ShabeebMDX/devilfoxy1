@@ -46,5 +46,5 @@ class Translation(object):
     
 <b>➥ Modded By</b> : <b><i><a href="https://t.me/solo_minded">Shabeeb solo</a></i></b>
 
-<b>➥ Source Code</b> : <i><a href="https://github.com/shabeeb66/devilfoxy1">Click Me</a></i>
+<b>➥ Movie Group</b> : <i><a href="https://t.me/astor_movies">Join Now</a></i>
 """
